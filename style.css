@@ -1,0 +1,277 @@
+body{
+   font-family: "Monserrat",sans-serif ; /*este nos da el tipo de letra que estaremos usando en toda la pagina*/
+}
+
+header{
+    background-color: #bbbbbb; /* esto es para darle el color de fondo del contenedor header*/
+    padding: 20px ;
+}
+
+.caja{
+    width: 940px; /* esto es para decirle al navegador quer me ocupe el 70% del ancho de la pagina */
+    position: relative; /* esto nos ayuda a acomodar nuestro menu al centro del contenedor*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute; /* esto es para pones los titulos del menu en la parte superior*/ 
+    top: 110px; /* esto es paar centrar dependiendo de la medida de ancho de la medida del contenedor*/
+    right: 0px;    
+}
+
+nav li{
+    display: inline; /* ewsto es para que el las lineas solo ocupen lo que necesitan de espacio dentro del contenedor */
+    margin: 0 0 0 15px ; /*esto es para separar  o darle un espacio de division entre cada titulo o contenedor*/ 
+}
+
+nav a{
+    text-transform: uppercase; /* esto es para poner los textos en mayusculas */
+    color: #000000;
+    font-weight: bold; /* esto es para ponerponer el negrito que resalte */
+    font-size: 22px;  /* esto ews para poner el tamaño de nuestra pagina*/
+    text-decoration: none; /*esto es para retirar el subrayado cuando se trata de vinculos  */
+}
+
+nav a:hover{ /* esto nos sirve para que cuando me pare con el mause en pagina se resalte con el color que le puse abajo*/
+    color: #c78c19;
+    text-decoration: underline; /* este es para que cuando me pare con el mause el menu  se le pone un linea debajo en el mismo color*/
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* esto es define el tamaño de  la caja o contenedor y define el limite que puede ocupar*/
+    border: 2px solid #000000; /* este es para darle un borde de 2 px de ancho entre el paddin y el magin de color negro*/
+    border-radius: 10px;/* esto es para redondear los bordes de nuetro borde*/
+}
+
+.productos li:hover{
+    border-color: #c78c19; /* este no pone el borde de el color de arriba resaltyado solo cuando le pongo el mause encima*/
+}
+
+/* este es para que despues de poner el mause encima resalta con el color de arriba y cuando de doy clic resta en verde*/
+.productos li:active{
+    border-color: #1fb934; 
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px; /* este nos sirve para que se resalte la letra dentro los h2 cuando se le pone el mause encima*/
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold; /* esto es para poner el texto en negrita*/
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg); /* esto es para poner una imagen de fondo negro*/
+    padding: 40px;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form{
+   margin: 40px 0; 
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+   margin: 20px 0; 
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*se le pone para darle el tiempo de cambio de color cuando se le pone el mause encima*/
+    cursor: pointer; /*este se usa para cambiar el cursor cuanso vamos a darle enviar ahi ya nos pone una manito*/
+}
+
+ /*transform: scale(1.2);  este lo usamos para hacer que nustro elementos se realcen y se vean mas grandes solo cuando ponemos el mause encima*/
+.enviar:hover{
+    background: darkorange;
+   /* usamos este patra darle efecto de giro anuestro boton en grados y tambien podemos darle las dos opciones aca y nos mda el mismo efecto */
+    transform: scale(1.2) rotate(90deg); 
+}
+
+table{
+   margin: 40px 40px; 
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*aqui inicia el ccs para nuestra pagina home*/
+
+.baner{
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+   text-align: center;
+   font-size: 2em;
+   margin: 0 0 1em; 
+   clear: left; /* este lo usamos para decirle al computador que esta no sera modificada por la funcion del float que tenemos mas abajo*/
+}
+
+/* este es para que se ponga en negrita la primera letra de todo los titulos en  nuetro contenedor de nombre principal  
+.titulo-principal::first-letter{
+    font-weight: bold;
+}*/
+
+
+
+/* este es para que nuetro primer parrafo en todo  las p sea de formato italico
+p:first-line{
+   font-style: italic;
+}*/
+
+.principal p{
+   margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+   font-style: italic; 
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:before{
+    content:"★"
+}
+
+/*  esta items es para para hacer una seudo-clase y es para decirle ami computador que necesito que la primera titulo en mi li debe de quedar en negrita despues de ponerle un font-weight: bol */
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales {
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px black;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }    
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
+
